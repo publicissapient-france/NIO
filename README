@@ -1,0 +1,20 @@
+
+Imlementations specific are stored in fr.xebia.usi.quizz.web
+You'll find in each subpackage a Main class able to run the implementation.
+
+Once started the test can be run using ab in command line :
+ab -p ./src/main/resources/user.json -c 50 -n100000 -r http://localhost:8080/api/user
+
+
+All Impl use the UserManagerMemoryImpl which is Hashmap backed,
+but if you've got a running mongodb instance you switch to the UserManagerMongoImpl.
+
+To run the JEE poc you should use maven like that:
+mvn package t7:run
+
+You can switch between tomcat NIO and BIO connector by modifying main/tomcat/conf/server.xml
+
+Also please install in your local maven repository the libs inside lib directory using
+command line described in pom.xml
+
+
