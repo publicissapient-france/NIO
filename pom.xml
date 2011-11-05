@@ -120,7 +120,9 @@
             <version>2.0.4</version>
         </dependency>
 
-
+        <!-- MUST BE MANUALLY ADDED IN LOCAL REPOS -->
+        <!-- mvn install:install-file -DgroupId=org.apache.deft -DartifactId=deft -Dversion=0.4.0-SNAPSHOT -Dpackaging=jar
+        -Dfile=lib/deft-0.4.0-SNAPSHOT.jar -->
         <dependency>
             <groupId>org.apache.deft</groupId>
             <artifactId>deft</artifactId>
